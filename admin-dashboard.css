@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    background-color: rgb(252, 251, 251);
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.sidebar {
+    background-color: #42ad94;
+    grid-row: 1 / 3;
+}
+
+.content {
+    background-color: #992c2c;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 80%;
+    background-color: rgb(240, 239, 239);
+    border-radius: 15px;
+    height: 2rem;
+    border: none;
+}
+
+#search-img {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 1.5rem;
+}
+
+#bell-img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.bird-img {
+    background-color: red;
+    border-radius: 100%;
+}
+
+.user-notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-notifications .flex-item {
+    margin-right: 2rem;
+}
+
+.user-notifications .bird-img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.user-notifications p {
+    font-weight: bold;
+}
+
+.user-greeting {
+    display: flex;
+    align-items: center;
+}
+
+.user-greeting p {
+    font-weight: bold;
+}
+
+.user-greeting .username {
+    font-size: 1.5rem;
+}
+
+.user-greeting .bird-img {
+    height: 4rem;
+    width: 4rem;
+    margin: 0 1.5rem;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.header-buttons button {
+    background-color: rgb(59, 104, 253);
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.header-buttons .flex-item {
+    margin-right: 2rem;
+}
+
+.sidebar .section-1 {
+    display: grid;
+    grid-template-columns: 50px 115px;
+    grid-template-rows: 100px repeat(6, 50px);
+    align-items: center;
+    padding-left: 1rem;
+    column-gap: 10px;
+}
+
+.sidebar .section-2 {
+    display: grid;
+    grid-template-columns: 50px 115px;
+    grid-template-rows: repeat(3, 50px);
+    align-items: center;
+    padding-top: 35px;
+    padding-left: 1rem;
+    column-gap: 10px;
+}
+
+.sidebar img {
+    justify-self: center;
+} 
+
+.sidebar .title {
+    font-size: 1.25rem;
+}
+
+.sidebar p {
+    font-weight: 600;
+}
